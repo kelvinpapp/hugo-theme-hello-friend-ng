@@ -13,7 +13,7 @@
         {{ if .IsHome }}
             {{ $.Site.Title }} {{ with $.Site.Params.Subtitle }} — {{ . }} {{ end }}
         {{ else }}
-            {{ .Title }} :: {{ $.Site.Title }} {{ with $.Site.Params.Subtitle }} — {{ . }}{{ end }}
+            {{ .Title }} : {{ $.Site.Title }} {{ with $.Site.Params.Subtitle }} — {{ . }}{{ end }}
         {{ end }}
     </title>
 {{ end }}
@@ -28,7 +28,7 @@
 
 {{ range $val := $.Site.Params.customCSS }}
     {{ if gt (len $val) 0 }}
-        <link rel="stylesheet" type="text/css" href="{{ $val }}">
+        <link rel="stylesheet" type="text/css" href="{{ $.Site.baseURL }}/static/{{ $val }}">
     {{ end }}
 {{ end }}
 
