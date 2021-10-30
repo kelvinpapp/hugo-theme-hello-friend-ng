@@ -13,14 +13,8 @@
     {{with .Site.Params.footer.bottomText}}
     <div class="footer__inner">
         <div class="footer__content">
-<<<<<<< HEAD
-            <span>{{ .Site.Params.footerLeft | default "Powered by <a href=\"http://gohugo.io\">Hugo</a> on <a href=\"https://https://azure.microsoft.com/en-gb\">Azure</a>" | safeHTML }}</span>
-            <span>{{ .Site.Params.footerRight | default "Theme made with &#10084; by <a href=\"https://github.com/rhazdon\">Djordje Atlialp</a>" | safeHTML }}</span>
-          </div>
-=======
             {{ range . }}<span>{{ . | safeHTML}}</span>{{ end }}
         </div>
->>>>>>> 848b6879b3a2a201510bd11dadf37826ee038616
     </div>
     {{ end }}
 </footer>
