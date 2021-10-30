@@ -137,7 +137,7 @@ img {
 figure {
   display: table;
   max-width: 100%;
-  margin: 25px 0;
+  margin: 20px 0;
 
   &.left {
     margin-right: auto;
@@ -147,7 +147,7 @@ figure {
     margin-right: auto;
     float: left;
     img {
-      margin: 25px 25px 25px 0;
+      margin: 15px 20px 15px 0;
     }
   }
 
@@ -164,7 +164,7 @@ figure {
     margin-left: auto;
     float: right;
     img {
-      margin: 25px 0 25px 25px;
+      margin: 15px 0 15px 20px;
     }
   }
 
